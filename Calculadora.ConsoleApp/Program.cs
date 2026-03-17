@@ -132,9 +132,11 @@ while (true == true)
 
     else
     {
-        Console.WriteLine("Escolha uma opção válida");
-        Console.ReadLine();
-        return;
+        historicoOperacoes = new string[100];
+        contadorOperacoes = 0;
+
+        historicoOperacoes[contadorOperacoes] = textoOperacoes;
+        contadorOperacoes++;
     }
 
     Console.WriteLine("O resultado é: " + resultado);
